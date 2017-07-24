@@ -81,12 +81,20 @@ h1 {
   text-align: center;
 }
 #main_content {
+  margin: 2% 0;
   background-color: #ddffff;
   padding: 20px;
 }
 #sidebar_content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sidebar_content div{
+  margin: 5px 0;
   background-color: #ffffdd;
-  padding: 20px
+  flex-basis: 100%;
+  padding: 2%;
 }
 #site_footer nav{
   background-color: #ffddaa;
@@ -95,6 +103,9 @@ h1 {
 }
 #site_footer a{
   padding: 0 10px;
+}
+#main_content h1{
+  text-align: left;
 }
 @media screen and (min-width:600px){
   #main_nav{
@@ -106,7 +117,7 @@ h1 {
     flex-basis: 33%;
   }
   #sidebar_content{
-    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
   }
   #main_content h1{
@@ -142,6 +153,7 @@ h1 {
     flex-basis: 20%;
   }
   #sidebar_content{
+    flex-wrap: nowrap;
     justify-content: space-around;
   }
 
